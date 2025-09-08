@@ -58,6 +58,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: artifacts
+        path: target/*.jar
     - name: Deploy to Sandbox
       env:
         USERNAME: ${{ secrets.anypoint_platform_username }}
